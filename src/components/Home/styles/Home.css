@@ -1,0 +1,73 @@
+.container {
+  width: 1349px;
+  padding: 40px 30px;
+  margin: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("https://www.greenscapedecor.com/wp-content/uploads/2022/04/2022-greenery-trends-800x533.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 150px;
+}
+.home__content .section__title {
+  font-size: 3rem;
+  padding-right: 60px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.home__content p {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 50px;
+  line-height: 47px;
+}
+.home__btns {
+  display: flex;
+  align-items: center;
+  column-gap: 3rem;
+}
+.morebtn {
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #285018;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* ?btn */
+.buybtn {
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  background-color: #285018;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.morebtn:hover {
+  background-color: #51a331;
+  color: white;
+}
+.buybtn:hover {
+  background-color: #51a331;
+  color: white;
+}
+/* ! */
+img {
+  width: 100%;
+  left: 30px;
+}
