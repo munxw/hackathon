@@ -1,3 +1,4 @@
+import axios from "axios";
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
@@ -73,6 +74,15 @@ const AuthContextProvider = ({ children }) => {
     authListener();
   }, []);
 
+  const rememberMe = (elem, rememberUser) => {
+    if (elem) {
+      localStorage.setItem("user", rememberUser);
+      console.log("ASdfafa");
+    } else {
+      console.log("AS");
+    }
+  };
+
   let value = {
     email,
     password,
@@ -89,6 +99,7 @@ const AuthContextProvider = ({ children }) => {
     handleSignUp,
     handleLogin,
     handleLogOut,
+    rememberMe,
   };
   return <authContext.Provider value={value}>{children}</authContext.Provider>;
 };

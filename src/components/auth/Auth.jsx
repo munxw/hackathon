@@ -29,8 +29,15 @@ const Auth = () => {
 
     handleSignUp,
     handleLogin,
-    handleLogOut,
+    // handleLogOut,
+    rememberMe,
   } = useAuth();
+
+  let rememberUser = {
+    email: "",
+    password: "",
+  };
+
   return (
     <>
       <Container component="main" maxWidth="xs">
@@ -138,6 +145,7 @@ const Auth = () => {
               <FormControlLabel
                 control={<Checkbox defaultChecked />}
                 label="remember me"
+                onChange={() => rememberMe("cncnvn")}
               />
               <Button
                 fullWidth
